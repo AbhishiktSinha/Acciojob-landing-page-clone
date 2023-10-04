@@ -571,11 +571,19 @@ nav{
 /* ------------------------------placement details section-----------------------------*/
 .placement-details{
     height: 80vh;
+    width: 100vw;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.header-placement-section{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .row1{
     font-family: 'ABeeZee';
@@ -600,9 +608,21 @@ nav{
     color:#2f2f2f;
 }
 .hiring-partners-container{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    width: 90%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: center;
+}
+.row-companies{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .button-placement-report > p{
     display: flex;
@@ -612,14 +632,14 @@ nav{
         font-size: larger;
 }
 .button-placement-report{
-    /* padding-inline: 10%;
-        padding-block: 3%; */
+    padding-block:0.5%;
+    padding-inline: 1%;
 
         font-style: italic;
 
         /* margin-inline: %; */
 
-        border-radius: 15px;
+        border-radius: 12px;
         
     color: white;
     background-color: #2f80ed;
