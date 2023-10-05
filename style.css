@@ -577,6 +577,8 @@ nav{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    padding-block: 2%;
 }
 .header-placement-section{
     height: 20%;
@@ -646,3 +648,135 @@ nav{
     border: 1px solid #2f80ed;
 }
 
+
+/* ------------------------------ student wall section------------------------------ */
+.student-wall-section{
+    height: 120vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-block: 2%;
+}
+
+    /* ---------------- section-header -------------------- */
+    .header-student-wall-section{
+        height: 9%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;        
+    }
+    .header-student-wall-section > h1{
+        font-family: 'ABeeZee';
+        font-style: italic;
+        font-weight: 400;
+    }
+    .header-student-wall-section > p{
+        font-size: 14px;
+    }
+
+    /* ------------------- cards-container ------------------------- */
+    .testimonial-container{
+        width: 80%;
+        height: 80%; 
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* -------------------card - testimonial ------------------------- */
+    .testimonial-column {
+        width: 30%;
+        /* height: 100%; */
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-testimonial{
+        width: 100%;
+        max-height: min-content;
+        padding-inline: 1vw;
+        padding-block: 1.2vh;
+
+        color:#2f2f2f;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        border: 1px solid #676767;
+        border-radius: 8px;
+
+        margin-block: 2%;
+
+        box-shadow: 2px 2px 20px #959595;
+    }
+        /* -------------------- header-card ---------------- */
+        .header-card-testimonial{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            margin-block: 5%;
+            
+        }
+
+        .header-left-card-testimonial{
+            width: 75%;
+            display: flex;
+        }
+        .student-image-container{
+            width: 64px; height: 64px;
+        }
+        .student-image-container > img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .student-name-position-container{
+            margin-left: 5%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: left;
+        }
+        .student-name-position-container > h3{
+            font-family: 'ABeeZee';
+            font-style: italic;
+            font-weight: 400;
+        }
+        .student-name-position-container > p{
+            font-size: small;
+        }
+
+        .header-socials-card-testimonial{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        /* -------------------- card-body ------------------- */
+        .body-card-testimonial{
+            margin-block: 5%;
+            text-align: left;
+
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* ------------------- card-footer -------------------- */
+        .footer-card-testimonial{
+            margin-block: 5%;
+            font-size: small;
+        }
