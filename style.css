@@ -10,6 +10,18 @@
 button{
     cursor: pointer;
 }
+p,a,button{
+    font-size: calc(0.5rem + 0.5vw);
+}
+h3{
+    font-size: calc(0.8rem + 0.5vw);
+}
+h2{
+    font-size: calc(0.9rem + 0.8vw);
+}
+h1{
+    font-size: calc(1.2rem + 1.1vw);
+}
 
 /* ----------------------- navbar ---------------- */
 nav{
@@ -153,13 +165,14 @@ nav{
 
     .row-3-stats{
         display: flex;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
         align-items: center;
 
         border: 1px solid #e2e2e2;
         border-radius: 8px;
 
-        height: 60px;
+        height: 30%;
         width: 100%;
         box-sizing: border-box;
         padding-inline: 4px;
@@ -186,8 +199,8 @@ nav{
         align-items: center;
     }
     .stats-element > .icon{
-        width: 36px;
-        height: 36px;
+        min-width: 36px;
+        min-height: 36px;
         
         margin-right: 8px;
         
@@ -210,7 +223,6 @@ nav{
         font-style: italic;
         font-family: 'ABeeZee';
         font-weight: 400;
-        font-size: 20px;
     }
 
     .hero-left-footer{
@@ -249,7 +261,7 @@ nav{
         align-items: center;
     }
     .sign-up-container{
-        width: 55%;
+        width: 65%;
         height: 88%;
 
         margin-block: 5%;
@@ -539,7 +551,10 @@ nav{
         width: 90%;
     }
     .footer-course-card > button {
-        padding-inline: 10%;
+        width: 45%;
+        box-sizing: border-box;
+
+        /* padding-inline: 10%; */
         padding-block: 3%;
 
         font-style: italic;
@@ -550,11 +565,16 @@ nav{
     }
     .footer-course-card > button > p{
 
+        width: 100%;
+
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        column-gap: 5%;
 
         font-size: larger;
+
+        white-space: nowrap;
     }
     .button-brochure{
         color: #2f80ed;
