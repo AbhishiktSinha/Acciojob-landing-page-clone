@@ -683,7 +683,7 @@ nav{
     /* ------------------- cards-container ------------------------- */
     .testimonial-container{
         width: 80%;
-        height: 80%; 
+        height: 70%; 
         
         display: flex;
         flex-wrap: wrap;
