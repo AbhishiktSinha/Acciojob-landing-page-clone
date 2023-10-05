@@ -683,7 +683,7 @@ nav{
     /* ------------------- cards-container ------------------------- */
     .testimonial-container{
         width: 80%;
-        height: 70%; 
+        /* height: 70%;  */
         
         display: flex;
         flex-wrap: wrap;
@@ -692,7 +692,7 @@ nav{
 
     /* -------------------card - testimonial ------------------------- */
     .testimonial-column {
-        width: 30%;
+        width: 29%;
         /* height: 100%; */
 
         display: flex;
