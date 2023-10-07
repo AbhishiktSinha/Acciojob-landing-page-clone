@@ -920,8 +920,10 @@ nav{
     /* ++++++++++++ hero section +++++++++++++ */
     .hero-section{
         flex-direction: column;
-        height: 150vh;
+        height: 140vh;
         width: 100vw;
+
+        justify-content: flex-start;
     }
 
         /* ******* hero top (hero left) ******* */
@@ -929,12 +931,12 @@ nav{
             box-sizing: border-box;
             width: 100%;
             padding-inline: 2%;
-            height: 55%;
+            min-height: 45%;
             
             padding-block: 1%;
         }
         .hero-left-main{
-            height: 80%;
+            height: 70%;
             padding-block: 0;
             align-items: center;
         }
@@ -978,7 +980,7 @@ nav{
         /* ********* hero-bottom (hero-right) *********** */
 
         .hero-right{
-            height: 45%;
+        /* height: 50%; */
             padding-block: 2%;
 
             width: 100%;
@@ -997,39 +999,50 @@ nav{
     /* ++++++++++++ courses section +++++++++++=*/
     .courses{
         height: 160vh;
-        justify-content: space-between;
+        justify-content: flex-start;
         box-sizing: border-box;
-        padding-block: 16%;
+        /* padding-block: 16%; */
         
     }
     .header-courses{
         width: 100vw;
         box-sizing: border-box;
         padding-inline: 2%;
+
+        justify-content: space-evenly;
     }
     .header-courses > h2, .header-courses > h4 { 
         width: 100%;
         text-align: center;
     }
     .courses-card-container{
-        height: 87%;
+        height: 90%;
+        box-sizing: border-box;
         
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
+        padding-block: 4%;
         
     }
     .course-card{
-        height: 48%;
-        width: 90%;
+        height: 45%;
+        width: 80%;
 
         padding-block: 5%;
-        padding-inline: 1.5%;
+        padding-inline: 1.7%;
+        /* margin-block: 2%; */
     }
     .header-course-card{
         width: 100%;
-        height: 30%;
+        height: 25%;
         /* justify-content: space-around; */
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-evenly;
 
     }.card-heading{
         column-gap: 3%;
@@ -1043,15 +1056,10 @@ nav{
     .details-course-card{
         justify-content: space-between;
         width: 100%;
+
+        height: 50%;
     }
-    .card-heading > .left-column{
-        column-gap: 0;
-        width: min-content;
-    }
-    .card-heading > .left-column > img{
-        display: inline-block;
-        width: calc(0.6rem + 0.4vw);
-    }
+
     .right-column{
         text-align: right;
     }
@@ -1078,10 +1086,21 @@ nav{
     .sign-up-container{
         width: 85%;
     }
-
+    .courses{
+        height: 180vh;
+    }
     .course-card > .header-course-card > .features-card-header{
         flex-direction: column;
         width: 100%;
         height: 40%;
+    }
+    .courses-card-container{
+        height: 100%;
+        justify-content: flex-start;
+        box-sizing: border-box;
+    }
+    .course-card{
+        height: 45%;
+        margin-block: 5%;
     }
 }
