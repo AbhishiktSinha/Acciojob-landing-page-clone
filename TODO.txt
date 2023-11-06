@@ -15,4 +15,4 @@ Some commonly used breakpoints for different devices:
 1. Small devices (mobile phones): Less than 600px. This is the point at which you would start to specifically style for mobile devices.
 2. Medium devices (tablets): 600px and up. This is where you would start to style for tablets and similar medium-sized devices.
 3. Large devices (laptops, desktops): 992px and up. This is where you would start to style for larger screens.
-4. Extra large devices (large desktops, TVs): 1200px and up. This is where you would start to style for very large screens.
+4. Extra large devices (large desktops, TVs): 1200px and up. This is where you would start to style for very large screens. 

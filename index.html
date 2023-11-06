@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
 
     <title>Acciojob-Landing-Clone</title>
 </head>
@@ -24,7 +25,14 @@
                 </ul>
     
                 <button class="login-button">Login</button>
-                <button class="burger-menu-button"><i class="fa-solid fa-bars"></i></button>
+                <button class="burger-menu-button" id="burger-menu-button">
+                    <div onclick="navbarMenuOpenFunction()" id="burger-menu-open-icon-container">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div onclick="navbarMenuCloseFunction()" id="burger-menu-close-icon-container">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </button>
             </div>
         </section>
         
@@ -32,7 +40,7 @@
             <p>Next batch starts in <i class="fa-regular fa-hourglass-half"></i> 22 Days, Hurry!</p>
         </section>
 
-        <div class="burger-menu-expanded">
+        <div class="burger-menu-expanded" id="burger-menu-expanded">
             <div class="menu-container">
                 <ul class="links-list">
                     <li><a href="#">Courses<i class="fa-solid fa-angle-down"></i></a></li>
@@ -140,6 +148,7 @@
                     <div class="disclaimer">
                         <p>By clicking 'Apply Now', you agree to our <br>
                         <a href="#" style="text-decoration: none"><span class="tAndc">Terms & Conditions</span></a>
+                        </p>
                     </div>
                 </div>
 
@@ -293,30 +302,30 @@
 
         <div class="hiring-partners-container">
             <div class="row-companies">
-                <img src="./assets/companies-logo/image 23companies-1.svg" alt="">
-                <img src="./assets/companies-logo/image 23companies-2.svg" alt="">
-                <img src="./assets/companies-logo/image 23companies-3.svg" alt="">
-                <img src="./assets/companies-logo/image 23companies-4.svg" alt="">
-                <img src="./assets/companies-logo/image 23companies-5.svg" alt="">
-                <img src="./assets/companies-logo/image 23companies.svg" alt="">
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 23companies-1.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 23companies.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 23companies-5.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 23companies-4.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 23companies-3.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 23companies-2.svg" alt=""></div>
+            </div>
+            
+            <div class="row-companies">                
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 53companies-2.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 38companies.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 38companies-3.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 38companies-2.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 38companies-1.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 23companies-6.svg" alt=""></div>
             </div>
             
             <div class="row-companies">
-                <img src="./assets/companies-logo/image 23companies-6.svg" alt="">
-                <img src="./assets/companies-logo/image 38companies-1.svg" alt="">
-                <img src="./assets/companies-logo/image 38companies-2.svg" alt="">
-                <img src="./assets/companies-logo/image 38companies-3.svg" alt="">
-                <img src="./assets/companies-logo/image 38companies.svg" alt="">
-                <img src="./assets/companies-logo/image 53companies-2.svg" alt="">
-            </div>
-            
-            <div class="row-companies">
-                <img src="./assets/companies-logo/image 53companies.svg" alt="">
-                <img src="./assets/companies-logo/image 53companies-3.svg" alt="">
-                <img src="./assets/companies-logo/image 54companies.svg" alt="">
-                <img src="./assets/companies-logo/image 55companies.svg" alt="">
-                <img src="./assets/companies-logo/image 57companies.svg" alt="">
-                <img src="./assets/companies-logo/image 23-1 companies.svg" alt="">
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 57companies.svg" alt=""></div>                    
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 55companies.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 54companies.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 53companies-3.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 53companies.svg" alt=""></div>
+                <div class="company-logo-container"><img src="./assets/companies-logo/image 23-1 companies.svg" alt=""></div>
             </div>
         </div>
 
